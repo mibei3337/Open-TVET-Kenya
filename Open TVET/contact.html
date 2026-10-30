@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Open TVET Kenya</title>
+  <meta name="description" content="Get in touch with Open TVET Kenya for course inquiries, CDACC program admissions, and student support.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="brand" aria-label="Open TVET Kenya Home">
+        <img src="Open TVET Kenya_ Skills for Everyone logo.png" alt="Open TVET Kenya Logo" class="site-logo">
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false">☰ Menu</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="login.html" class="portal-link">Student Portal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> / Contact Us
+        </div>
+        <h1>We Would Love to Hear From You</h1>
+        <p>
+          Have questions about our CDACC course levels, admissions, or online learning platform? Reach out to our support team using the details or form below.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT DETAILS & FORM -->
+    <section class="content-section">
+      <div class="container contact-layout">
+        
+        <!-- CONTACT INFORMATION CARDS -->
+        <div>
+          <div class="section-heading" style="text-align: left; margin-bottom: 20px;">
+            <span class="section-label">Get in Touch</span>
+            <h2>Official Channels</h2>
+          </div>
+
+          <div class="contact-details">
+            <article class="contact-card">
+              <h3>Email Support</h3>
+              <p>For general inquiries and academic assistance:</p>
+              <a href="mailto:info@opentvetkenya.ac.ke">info@opentvetkenya.ac.ke</a>
+            </article>
+
+            <article class="contact-card">
+              <h3>Phone Hotline</h3>
+              <p>Available Monday to Friday, 8:00 AM – 5:00 PM:</p>
+              <a href="tel:+254700000000">+254 700 000 000</a>
+            </article>
+
+            <article class="contact-card">
+              <h3>Institution Headquarters</h3>
+              <p>Nairobi, Kenya</p>
+              <span style="font-size: 12px; color: var(--muted); display: block; margin-top: 5px;">Primary administrative and digital learning center</span>
+            </article>
+          </div>
+        </div>
+
+        <!-- ENQUIRY FORM -->
+        <div class="interest-form">
+          <h2 style="color: var(--green); font-size: 24px; margin-bottom: 8px;">Send Us a Message</h2>
+          <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;">Complete the form below and our support team will get back to you promptly.</p>
+
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Full Name</label>
+                <input type="text" id="contact-name" name="name" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Enquiry Topic</label>
+              <select id="subject" name="subject" required>
+                <option value="">Choose a topic...</option>
+                <option value="CDACC Courses & Levels">CDACC Courses & Levels (3–6)</option>
+                <option value="Admissions & KCSE Verification">Admissions & KCSE Verification</option>
+                <option value="Online Portal & Moodle">Online Portal & Moodle</option>
+                <option value="Practical Training">Practical Workshop Training</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Your Message</label>
+              <textarea id="contact-message" name="message" placeholder="Type your question or message here..." required></textarea>
+            </div>
+
+            <button type="button" id="contact-submit-btn" class="button button-gold" style="width: 100%; border: none; cursor: pointer; padding: 14px;">Send Message</button>
+
+            <div id="contact-message-box" role="status" aria-live="polite" style="display: none; margin-top: 18px; padding: 14px; background: #e8f4f0; border-left: 4px solid var(--green); border-radius: 6px; color: var(--green); font-weight: 700; font-size: 14px;"></div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>Open TVET Kenya</h3>
+          <p>Skills for Everyone.</p>
+          <p>Official CDACC and TVET Curriculum Training Institution.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="about.html">About Us</a>
+        </div>
+        <div class="footer-column">
+          <h3>Learner Support</h3>
+          <a href="login.html">Student Portal</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div class="copyright">
+        © <span id="year"></span> Open TVET Kenya. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

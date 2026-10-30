@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard | Open TVET Kenya</title>
+  <meta name="description" content="Student portal dashboard for Open TVET Kenya featuring modular curriculum progress, live timetables, and fee management.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+
+  <!-- APP SHELL CONTAINER -->
+  <div class="app-layout">
+
+    <!-- LEFT SIDEBAR NAVIGATION -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <img src="Open TVET Kenya_ Skills for Everyone logo_2.png" alt="Open TVET Kenya Logo" class="sidebar-logo">
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="sidebar-link active">
+          <span class="icon">📊</span> Dashboard
+        </a>
+        <a href="courses-portal.html" class="sidebar-link">
+          <span class="icon">📚</span> My Courses
+        </a>
+        <a href="admissions.html" class="sidebar-link">
+          <span class="icon">📝</span> Admissions
+        </a>
+        <a href="login.html" class="sidebar-link">
+          <span class="icon">🚪</span> Sign Out
+        </a>
+      </nav>
+    </aside>
+
+    <!-- MAIN CONTENT WRAPPER -->
+    <main class="main-content">
+
+      <!-- TOP HEADER BAR -->
+      <header class="dash-top-header">
+        <div class="header-title">
+          <span class="institution-tag">Open TVET Kenya • Student Portal</span>
+        </div>
+        <div class="header-user-profile">
+          <div class="user-info-text">
+            <span class="user-name">Armani</span>
+            <span class="user-role">CDACC Level 5 Student</span>
+          </div>
+          <img src="Student engaging in digital TVET learning.jpg" alt="Student Profile Photo" class="header-avatar">
+        </div>
+      </header>
+
+      <!-- DASHBOARD CONTENT AREA -->
+      <div class="dash-container">
+
+        <!-- WELCOME & MODULAR CURRICULUM BANNER -->
+        <section class="welcome-banner-card">
+          <div class="welcome-text-area">
+            <span class="greeting-badge">👋 Welcome, Armani</span>
+            <h1>Electrical Installation & Systems</h1>
+            <p class="meta-program">
+              Department of Electrical & Mechatronics • CDACC Standardized TVET Curriculum
+            </p>
+          </div>
+          <div class="modular-meta-badges">
+            <div class="meta-badge-item">
+              <span class="badge-label">Year of Study</span>
+              <span class="badge-value">Year II</span>
+            </div>
+            <div class="meta-badge-item">
+              <span class="badge-label">Active Module</span>
+              <span class="badge-value">Module 1 (Level 5)</span>
+            </div>
+            <div class="meta-badge-item">
+              <span class="badge-label">Term / Semester</span>
+              <span class="badge-value">Semester I</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- MAIN GRID: TWO COLUMNS (CONTENT + RIGHT WIDGETS) -->
+        <div class="dash-content-grid">
+
+          <!-- LEFT MAIN AREA -->
+          <div class="dash-main-column">
+
+            <!-- COURSE PROGRESS IN MODULE -->
+            <div class="dash-card">
+              <div class="card-header-flex">
+                <h3>Course Units Progress</h3>
+                <span class="sub-text">Moodle LMS Sync</span>
+              </div>
+              <div class="course-progress-list">
+                <div class="progress-row">
+                  <div class="prog-info">
+                    <strong>Advanced Domestic & Commercial Wiring</strong>
+                    <span>ELS/LV5/01 • 12 Lessons Completed</span>
+                  </div>
+                  <div class="prog-bar-wrap">
+                    <div class="prog-bar" style="width: 88%;"></div>
+                  </div>
+                  <span class="prog-percent">88%</span>
+                </div>
+
+                <div class="progress-row">
+                  <div class="prog-info">
+                    <strong>Solar PV Systems Installation</strong>
+                    <span>ELS/LV5/02 • 8 Lessons Completed</span>
+                  </div>
+                  <div class="prog-bar-wrap">
+                    <div class="prog-bar" style="width: 82%;"></div>
+                  </div>
+                  <span class="prog-percent">82%</span>
+                </div>
+
+                <div class="progress-row">
+                  <div class="prog-info">
+                    <strong>Electrical Motor Control Circuits</strong>
+                    <span>ELS/LV5/03 • In Progress</span>
+                  </div>
+                  <div class="prog-bar-wrap">
+                    <div class="prog-bar" style="width: 40%;"></div>
+                  </div>
+                  <span class="prog-percent">40%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- UPCOMING TIMETABLE / SYNCHRONOUS CLASSES -->
+            <div class="dash-card">
+              <div class="card-header-flex">
+                <h3>Upcoming Lessons & Synchronous Classes</h3>
+                <span class="sub-text">Live Timetable</span>
+              </div>
+              <div class="timetable-list">
+                <div class="timetable-item">
+                  <div class="time-badge">
+                    <span class="time">09:00 AM</span>
+                    <span class="date">Tomorrow</span>
+                  </div>
+                  <div class="class-details">
+                    <strong>Solar PV Inverter Configuration & Testing</strong>
+                    <p>Live Practical Demonstration with Trainer Mwangi</p>
+                  </div>
+                  <a href="#" class="button button-gold" style="padding: 8px 14px; font-size: 12px;">Join Live Stream</a>
+                </div>
+
+                <div class="timetable-item">
+                  <div class="time-badge">
+                    <span class="time">02:00 PM</span>
+                    <span class="date">Fri, Nov 1</span>
+                  </div>
+                  <div class="class-details">
+                    <strong>Motor Control Schematic Review & Q&A</strong>
+                    <p>Interactive Workshop Session with Trainer Otieno</p>
+                  </div>
+                  <a href="#" class="button button-outline" style="padding: 8px 14px; font-size: 12px; color: var(--green); border-color: var(--green);">View Materials</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT SIDEBAR WIDGETS -->
+          <div class="dash-sidebar-column">
+
+            <!-- STUDENT PROFILE CARD WIDGET -->
+            <div class="dash-card widget-profile-card">
+              <div class="profile-avatar-wrap">
+                <img src="Student engaging in digital TVET learning.jpg" alt="Armani" class="widget-avatar">
+              </div>
+              <h3>Armani</h3>
+              <p class="reg-number">Reg No: OTV/054/2026</p>
+              <div class="profile-meta-pills">
+                <span class="pill">Level 5</span>
+                <span class="pill">Active Status</span>
+              </div>
+            </div>
+
+            <!-- SCHOOL FEES WIDGET -->
+            <div class="dash-card widget-fees-card">
+              <div class="card-header-flex" style="margin-bottom: 10px;">
+                <h3>School Fees Account</h3>
+                <span class="icon">💳</span>
+              </div>
+              <div class="fees-amount-box">
+                <span class="fees-label">Current Balance Due</span>
+                <span class="fees-value">KES 0.00</span>
+              </div>
+              <p class="fees-status-text">✓ Fee structure fully cleared for Semester I.</p>
+              <a href="#" class="button button-gold" style="width: 100%; text-align: center; display: block; padding: 10px; font-size: 13px; margin-top: 12px;">View Statement</a>
+            </div>
+
+            <!-- QUICK LAUNCH SHORTCUTS WIDGET -->
+            <div class="dash-card">
+              <h3 style="font-size: 16px; margin-bottom: 14px;">Quick Launch</h3>
+              <div class="quick-launch-grid">
+                <a href="courses-portal.html" class="quick-launch-btn">
+                  <span>📚</span>
+                  <span>My Courses</span>
+                </a>
+                <a href="admissions.html" class="quick-launch-btn">
+                  <span>📂</span>
+                  <span>Documents</span>
+                </a>
+                <a href="contact.html" class="quick-launch-btn">
+                  <span>💬</span>
+                  <span>Support</span>
+                </a>
+                <a href="#" class="quick-launch-btn">
+                  <span>📅</span>
+                  <span>Timetable</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

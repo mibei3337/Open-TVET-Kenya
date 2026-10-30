@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions & Enrollment | Open TVET Kenya</title>
+  <meta name="description" content="Explore admission requirements, application steps, and enroll in practical CDACC-aligned technical courses at Open TVET Kenya.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="brand" aria-label="Open TVET Kenya Home">
+        <img src="Open TVET Kenya_ Skills for Everyone logo.png" alt="Open TVET Kenya Logo" class="site-logo">
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false">☰ Menu</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="admissions.html" class="active">Admissions</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="portal-link">Student Portal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> / Admissions
+        </div>
+        <h1>Start Your Skills Journey</h1>
+        <p>
+          Take the next step toward practical competence. Review our admission guidelines, explore entry requirements, and apply for your preferred CDACC curriculum qualification level (Levels 3–6).
+        </p>
+      </div>
+    </section>
+
+    <!-- ADMISSION STEPS -->
+    <section class="content-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-label">Enrollment Process</span>
+          <h2>How to Apply for Admission</h2>
+          <p>Follow these simple steps to join Open TVET Kenya and begin your flexible training program.</p>
+        </div>
+
+        <div class="admission-grid">
+          <article class="card">
+            <div class="number">01</div>
+            <h3>Explore Programs</h3>
+            <p>Browse our CDACC course catalog to select a qualification level (3 to 6) matching your career goals.</p>
+          </article>
+
+          <article class="card">
+            <div class="number">02</div>
+            <h3>Prepare Documents</h3>
+            <p>Ensure you have your national identification details and your KCSE certificate ready for digital upload.</p>
+          </article>
+
+          <article class="card">
+            <div class="number">03</div>
+            <h3>Submit Application</h3>
+            <p>Complete our secure online enrollment form below, attach your certificate, and await confirmation status.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REQUIREMENTS & STANDARDS -->
+    <section class="content-section requirements-section">
+      <div class="container requirements-layout">
+        <div>
+          <div class="section-heading" style="text-align: left; margin-bottom: 20px;">
+            <span class="section-label">Prerequisites</span>
+            <h2>What You Need to Get Started</h2>
+            <p>We keep our entry pathways flexible to accommodate learners from diverse backgrounds across Kenya.</p>
+          </div>
+
+          <ul class="check-list">
+            <li>National ID or Passport number for student registration</li>
+            <li>KCSE certificate or relevant prior vocational qualification (Levels 3–6)</li>
+            <li>Basic proficiency in English or Kiswahili</li>
+            <li>Access to a smartphone, tablet, or computer with internet connectivity</li>
+          </ul>
+        </div>
+
+        <aside class="note-panel">
+          <h3>Regulatory Compliance & Standards</h3>
+          <p>
+            Open TVET Kenya operates in alignment with national technical and vocational education frameworks. For official accreditation guidelines and standards in Kenya, you can consult the 
+            <a href="https://www.tveta.go.ke/" target="_blank" rel="noopener noreferrer"><strong>TVETA website</strong></a>.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ENROLLMENT / APPLICATION FORM -->
+    <section class="content-section interest-section" id="interest">
+      <div class="container form-layout">
+        <div class="form-intro">
+          <span class="section-label">Online Application</span>
+          <h2>Student Enrollment Form</h2>
+          <p>
+            Ready to begin? Fill out the application form with your details, select your CDACC course program, and attach your KCSE certificate. Our admissions team will review your submission promptly.
+          </p>
+        </div>
+
+        <form class="interest-form" id="admissions-form" enctype="multipart/form-data">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" name="fullName" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="e.g., +254 700 000000" required>
+            </div>
+            <div class="form-group">
+              <label for="course">Select Course Program & Level</label>
+              <select id="course" name="course" required>
+                <option value="">Choose a program...</option>
+                <option value="Analytical Chemistry">Analytical Chemistry (Level 6)</option>
+                <option value="Autobody Technician">Autobody Technician (Level 3–6)</option>
+                <option value="Building Technology">Building Technology & Construction (Level 3–6)</option>
+                <option value="Carpentry and Joinery">Carpentry and Joinery (Level 3–6)</option>
+                <option value="Electrical Installation">Electrical Installation & Systems (Level 3–6)</option>
+                <option value="Fashion Design">Fashion Design & Garment Making (Level 3–6)</option>
+                <option value="Horticulture">Horticulture & Crop Production (Level 3–6)</option>
+                <option value="Plumbing Technology">Plumbing Technology (Level 3–6)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- KCSE Certificate Upload Field -->
+          <div class="form-group">
+            <label for="kcse-cert">Upload KCSE Certificate (PDF or Image)</label>
+            <div class="file-upload-wrapper">
+              <input type="file" id="kcse-cert" name="kcseCert" accept=".pdf,image/*" required>
+              <span class="file-upload-instruction">📁 Choose PDF or image file (Max size: 5MB)</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Additional Notes or Questions (Optional)</label>
+            <textarea id="message" name="message" placeholder="Tell us about your background or any questions you have..."></textarea>
+          </div>
+
+          <button type="submit" class="button button-gold" style="width: 100%; border: none; cursor: pointer; padding: 15px; font-size: 15px;">Submit Application & Certificate</button>
+
+          <div id="form-message" role="status" aria-live="polite" style="display: none; margin-top: 20px; padding: 18px; background: #e8f4f0; border-left: 5px solid var(--green); border-radius: 8px; color: var(--green); font-size: 14px; line-height: 1.6;"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>Open TVET Kenya</h3>
+          <p>Skills for Everyone.</p>
+          <p>Official CDACC and TVET Curriculum Training Institution.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="about.html">About Us</a>
+        </div>
+        <div class="footer-column">
+          <h3>Learner Support</h3>
+          <a href="login.html">Student Portal</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div class="copyright">
+        © <span id="year"></span> Open TVET Kenya. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
